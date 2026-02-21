@@ -1,0 +1,6 @@
+Mit meinen eigene Augen sehe ich das es gleich aussieht, eine Ai kann definitiv erkenne ob zwei Lautsprache sätze ähnlich sich anhören. Frage ist ob eine Ai auch sinvoll Sätze krieren kann um die warscheinlichkeit zu erhöhen das es von anderen verstanden wird
+!!!!!!! Es vermeidet Sätze wo die Satz Übersetzung mit der lautsprache dadurch das eine bestimmtes Wort benutz werden muss. Somit sollt es in der Lage  sein das man durch diese Logik ein Satz zu entwickeln der  verstädnlich ist. Dafür könnte man eine Liste an möglichen Sätzen nutzen und diese dann auf ihre Qualität prüfen
+
+Wohlmöglich ist das auschreichend um effektiv eine passende Übersetzung zu habe
+--> Die Übersetzung muss nicht 1 zu 1 sein
+ 
