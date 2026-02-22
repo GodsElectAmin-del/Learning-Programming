@@ -1,0 +1,41 @@
+Challenge: BankAccount mini project
+Requirements
+Create a class BankAccount with:
+
+Attributes (fields)
+
+String ownerName
+String accountNumber
+double balance
+Constructor
+
+Takes ownerName and accountNumber
+Sets balance to 0.0
+Instance methods (class methods)
+
+void deposit(double amount)
+If amount <= 0, do nothing and print an error message.
+Otherwise add to balance.
+boolean withdraw(double amount)
+If amount <= 0 or amount > balance, don’t change balance, print an error, return false.
+Otherwise subtract and return true.
+void printSummary()
+Prints owner, account number, current balance (nice formatting).
+double getBalance()
+Returns the current balance.
+Static method
+
+static void transfer(BankAccount from, BankAccount to, double amount)
+Uses from.withdraw(amount) and if it succeeds, calls to.deposit(amount).
+Main program (Main class)
+In main:
+
+Create two accounts (two objects).
+Deposit money into both.
+Withdraw from one (successful) and try one failing withdraw (too much).
+Transfer money from one to the other (successful) and try one failing transfer.
+Print summaries after each “phase” so you can see changes.
+Extra rules (to ensure you really learn methods)
+You must call methods on objects like acc1.deposit(50);
+You must use the static transfer method like BankAccount.transfer(acc1, acc2, 25);
+No user input needed (hardcode values), so you focus on OOP.
