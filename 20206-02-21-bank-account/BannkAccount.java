@@ -5,7 +5,7 @@ class BankAccount {
 
   public BankAccount(String ownerName, String accountNumber) {
     // TODO
-    balance = 0.0;
+    balance = 10;
     this.ownerName = ownerName;
     this.accountNumber = accountNumber; 
   }
@@ -39,11 +39,20 @@ class BankAccount {
 
   public void printSummary() {
     // TODO
-    System.err.println("The Account Owner is: " + ownerName);
-    System.err.println("The Account Owners Balance is: " + balance );
+    System.out.println("The Account Owner is: " + ownerName);
+    System.out.println("The Account Owners Balance is: " + balance );
   }
 
   public static void transfer(BankAccount from, BankAccount to, double amount) {
     // TODO
+    // i need to check for Null Point exceptions
+ 
+
+    if (from.withdraw(amount)){
+      to.deposit(amount);
+    }
+    else {
+      System.out.println("transfer faild! ");
+    }
   }
 }
