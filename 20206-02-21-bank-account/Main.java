@@ -4,8 +4,8 @@ public class Main {
 BankAccount AccountOne = new  BankAccount("Peter", "1");
 BankAccount AccountTwo = new BankAccount("Max", "2");
 
-AccountOne.withdraw(1.0);
-AccountTwo.withdraw(10.0);
+AccountOne.withdraw(5.0);
+AccountTwo.withdraw(20.0);
 
     // TODO: deposits
 

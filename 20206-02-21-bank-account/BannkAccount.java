@@ -5,7 +5,7 @@ class BankAccount {
 
   public BankAccount(String ownerName, String accountNumber) {
     // TODO
-    balance = 10;
+    balance =10.0;
     this.ownerName = ownerName;
     this.accountNumber = accountNumber; 
   }
