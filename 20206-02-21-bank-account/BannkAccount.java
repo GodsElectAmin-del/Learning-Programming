@@ -5,7 +5,7 @@ class BankAccount {
 
   public BankAccount(String ownerName, String accountNumber) {
     // TODO
-    balance =10.0;
+    balance =0;
     this.ownerName = ownerName;
     this.accountNumber = accountNumber; 
   }
@@ -50,6 +50,8 @@ class BankAccount {
 
     if (from.withdraw(amount)){
       to.deposit(amount);
+      System.out.println("The New Account balance of" + from.ownerName + "is " + from.balance);
+      System.out.println("The New Account balance of" + to.ownerName + "is " + to.balance);
     }
     else {
       System.out.println("transfer faild! ");
