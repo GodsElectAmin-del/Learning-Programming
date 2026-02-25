@@ -1,0 +1,3 @@
+AI Project TODO
+1) do language Models already understand phonetic language?
+2) Creating an 

@@ -4,21 +4,25 @@ Create a class BankAccount with:
 
 Attributes (fields)
 
-String ownerName
-String accountNumber
-double balance
-Constructor
+String ownerName +
+String accountNumber + 
+double balance +
 
-Takes ownerName and accountNumber
-Sets balance to 0.0
+Constructor - Here is ment the Constructor BankAccount
+
+Takes ownerName and accountNumber + 
+Sets balance to 0.0 + 
+
 Instance methods (class methods)
 
-void deposit(double amount)
-If amount <= 0, do nothing and print an error message.
-Otherwise add to balance.
+void deposit(double amount) +
+If amount <= 0, do nothing and print an +error message.+
+Otherwise add to balance. (+)
+
 boolean withdraw(double amount)
 If amount <= 0 or amount > balance, don’t change balance, print an error, return false.
 Otherwise subtract and return true.
+
 void printSummary()
 Prints owner, account number, current balance (nice formatting).
 double getBalance()
