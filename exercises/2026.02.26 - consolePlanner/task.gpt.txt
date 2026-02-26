@@ -1,0 +1,90 @@
+Project assignment: build a small but “real” console app that naturally forces you to use all those topics.
+
+Project: ConsolePlanner (CLI task + event planner)
+
+Goal: manage Tasks and Events from the terminal: add, list, complete, sort, filter by date, etc.
+
+Suggested package structure
+
+com.yourname.consoleplanner
+Main
+model (Task, Event, Entry, enums)
+service (PlannerService)
+ui (Command, CommandType, optional)
+
+Milestones / requirements (do them in order)
+
+Encapsulation + modifiers + this Create class PlannerService that stores entries in a private final ArrayList<Entry> entries;
+All fields in model classes must be private.
+Provide getters/setters where needed (validate in setters).
+Use this to disambiguate fields in constructors/setters.
+Add constants like public static final String DATE_PATTERN = "yyyy-MM-dd"; (even if you don’t fully use it yet).
+Packages + API usage
+Put classes into packages (model, service, ui).
+Use Java API types: ArrayList, List, Comparator, Optional (optional), Scanner.
+Inheritance + super + polymorphism Create an abstract base class Entry:
+Fields: id (int), title (String), createdAt (java.time.LocalDateTime)
+Constructor sets createdAt = LocalDateTime.now()
+public abstract String getType();
+public abstract LocalDate getRelevantDate(); (for sorting/filtering)
+
+Create subclasses:
+
+Task extends Entry: fields dueDate (LocalDate), status (Status)
+Event extends Entry: fields date (LocalDate), location (String)
+
+Requirements:
+
+Subclass constructors must call super(...).
+Override getType(), getRelevantDate(), and toString().
+In PlannerService.listAll(), store everything as Entry and print polymorphically (no instanceof in the basic version).
+Enums Create:
+enum Status { OPEN, DONE }
+enum Priority { LOW, MEDIUM, HIGH } (add priority to Task) Use them in logic:
+Mark a task done
+Filter tasks by Status
+Sort by Priority then by date
+Interface + abstraction Create an interface Exportable:
+Method: String toExportLine();
+
+Implement it in both Task and Event. In PlannerService, add printExport() that prints export lines for all entries.
+
+Inner class + anonymous class Inner class requirement (choose one):
+Option A: inside Entry, create inner class Note with text and createdAt, and allow each Entry to have a private final ArrayList<Note> notes;
+Option B: inside PlannerService, create an inner class IdGenerator that manages incremental IDs.
+
+Anonymous class requirement:
+
+Sort entries using an anonymous Comparator<Entry> (not a lambda), e.g. sort by getRelevantDate():
+entries.sort(new Comparator<Entry>() { ... });
+User input + dates In Main, build a command loop using Scanner:
+
+Commands (minimum):
+
+add task <title> <yyyy-mm-dd> <LOW|MEDIUM|HIGH>
+add event <title> <yyyy-mm-dd> <location>
+list
+done <id>
+filter date <yyyy-mm-dd>
+exit
+
+Date parsing must use LocalDate.parse(...) and handle invalid input (print error, keep app running).
+
+Definition of “done” (what to submit)
+
+Compiles and runs from Main.
+Uses packages.
+Demonstrates each topic at least once:
+this: in constructors/setters
+modifiers: private, public, final, static final
+encapsulation: private fields + validated methods
+packages + API: java.time, collections, Scanner
+inheritance + polymorphism + super
+inner class
+abstraction: abstract class Entry
+interface: Exportable
+anonymous class: new Comparator<>() { ... }
+enums: Status, Priority
+user input + date parsing
+
+If you tell me whether you prefer “notes as inner class” (Option A) or “ID generator as inner class” (Option B), I can give you a tight starter skeleton (files + class stubs) that matches this assignment exactly.
