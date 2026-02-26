@@ -1,6 +1,15 @@
-import java.security.KeyStore.Entry;
 import java.util.ArrayList;
+import java.util.List;
 
 public class PlannerService{
-    ArrayList<Entry> emtoes = new ArrayList<Entry>();
+  private final List<Entry> entries = new ArrayList()List<>();
+
+// Getter
+public String getEntry(){
+    return entries;
+}
+// Setter
+public void setEntry(Entry newEntry){
+    this.entries = newEntry;
+}
 }
