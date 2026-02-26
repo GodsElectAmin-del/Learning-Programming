@@ -43,4 +43,5 @@ So wee need to loop through an word and have an if statement that looks for thos
 #ICh gebe jedesmal wenn der Buchstabe gefunden wurde ein eine 1 zum score, der der am Ende den höchsten Score hat wird ausgewählt
 
 '''
-# I figured out that 
+# I figured out that you dont need that compairsion because a word that has the extra letters will get a higher score anyhow than a word
+# that doesnt have the extra, we are looking for the best anyhow
