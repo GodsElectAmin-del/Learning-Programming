@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PlannerService{
-  private final List<Entry> entries = new ArrayList()List<>();
+  private final List<Entry> entries = new ArrayList<>();
 
 // Getter
 public String getEntry(){
@@ -10,6 +10,6 @@ public String getEntry(){
 }
 // Setter
 public void setEntry(Entry newEntry){
-    this.entries = newEntry;
+    entries.add(newEntry);
 }
 }
