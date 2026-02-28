@@ -33,8 +33,8 @@ ipa_list = [
 
 
 
-# TODO figure out how i can change the IPA word in an usealble loop
-
+# TODO figure out how i can change the IPA word in an usealble loop / done
+#we need to store an score for each word
 
 # IPAword = "ɔpɣaːvə"
 for z in ipa_list:
@@ -42,5 +42,7 @@ for z in ipa_list:
     if y in z:
      print("this word is in the IPA word " + y)
      score += 1
+  print("the score is ", score) 
+  score = 0
 print("the score is ", score)   
   
