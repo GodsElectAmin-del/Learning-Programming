@@ -24,6 +24,7 @@ if '\ CA 92' < '\ CA 95':
     # I might just use this instead, i just nead to check if my letters are in the intervall 
     # of the Base IPA letters if not we should just skip left and if that word is in that we combine them
 
+
 '''
 txt = "aʊ̯fɡaːbə"
 print("ʊ̯" in txt)

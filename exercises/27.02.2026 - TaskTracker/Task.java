@@ -3,24 +3,24 @@
     private String title;
     private boolean done;
 
-    public int getid(){
+    public int getId(){
         return id;
     }
-    public void setid (int newID){
+    public void setId (int newID){
          this.id = newID;
 }
-    public String gettitle(){
+    public String getTitle(){
         return title;
     }
 
-    public void settitle(String newTitle){
+    public void setTitle(String newTitle){
         this.title = newTitle;
     }
 
-    public boolean getdone(){
+    public boolean getDone(){
         return done;
 }
-    public void setdone(boolean newDone){
+    public void setDone(boolean newDone){
         this.done = newDone;
     }
 
