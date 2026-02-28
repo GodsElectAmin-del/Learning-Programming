@@ -42,7 +42,35 @@ for z in ipa_list:
     if y in z:
      print("this word is in the IPA word " + y)
      score += 1
-  print("the score is ", score) 
+  print("the score of ",z, "is: ",score) 
   score = 0
-print("the score is ", score)   
-  
+   
+
+# TODO We need to filter out the word with the highest score
+# we need to assign each word in that array and number: is that an multi dimensional array
+
+# TODO Creating a multidimensional Zero Matrix
+n = ipa_list.size 
+m,n = 2,n 
+IPAScoreList = []#
+
+'''
+m, n = 4, 5
+mat = []
+
+for i in range(m):
+    row = []
+    for j in range(n):
+        row.append(0)
+    mat.append(row)
+
+print(mat)
+
+I dont understand
+'''
+#TODO insert an GPT output of an promt generating IPA words in an array
+
+# TODO generate a usable GPT prompt
+
+# TODO have acces to an chatbot API the gnerates a Word and than have code inserting it inside the code
+
