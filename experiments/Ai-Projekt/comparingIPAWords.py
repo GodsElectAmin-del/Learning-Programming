@@ -50,9 +50,16 @@ for z in ipa_list:
 # we need to assign each word in that array and number: is that an multi dimensional array
 
 # TODO Creating a multidimensional Zero Matrix
-n = ipa_list.size 
+n = len(ipa_list)
 m,n = 2,n 
-IPAScoreList = []#
+mat = []
+for i in range (m):
+ row = []
+ for j in range(n):
+   row.append(0)
+ mat.append(row)
+print(mat)
+# IPAScoreList = []
 
 '''
 m, n = 4, 5

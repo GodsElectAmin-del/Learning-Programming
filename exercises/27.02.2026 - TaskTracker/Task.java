@@ -23,11 +23,18 @@
     public void setDone(boolean newDone){
         this.done = newDone;
     }
-    public Task(int id, String title, boolean done){
+
+        public void markDone(){
+        this.done = true;
+    }
+    
+    public Task(int id, String title){
         // ist das hinreichend oder muss hier noch was hin
         this.id = id;
         this.title = title;
-        this.done = done;
+        this.done = false;
     }
+
+
 
 }
