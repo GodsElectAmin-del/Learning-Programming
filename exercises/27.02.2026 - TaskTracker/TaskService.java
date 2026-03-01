@@ -16,9 +16,7 @@ public class TaskService {
         }
     }
 
-    public void markDone(int id){
 
-    }
 }
 
 // Also man kann anscheind Objekte in Array List speichern
