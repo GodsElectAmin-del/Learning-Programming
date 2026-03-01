@@ -52,13 +52,15 @@ u = 0
 for z in ipa_list:
   z 
   IPAScoreList[0][u] = z
-  u += 1
+ # u += 1
   for y in compIPA:
     if y in z:
      print("this word is in the IPA word " + y)
      score += 1
   print("the score of ",z, "is: ",score) 
+  IPAScoreList[1][u] = score
   score = 0
+  u += 1
 
 print(IPAScoreList)
   
