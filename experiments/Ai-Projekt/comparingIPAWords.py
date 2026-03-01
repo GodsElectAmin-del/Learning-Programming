@@ -51,21 +51,23 @@ print(IPAScoreList)
 u = 0
 for z in ipa_list:
   z 
-  IPAScoreList[1][u] = z
+  IPAScoreList[0][u] = z
  # u += 1
   for y in compIPA:
     if y in z:
      print("this word is in the IPA word " + y)
      score += 1
   print("the score of ",z, "is: ",score) 
-  IPAScoreList[0][u] = score
+  IPAScoreList[1][u] = score
   score = 0
   u += 1
 
 print(IPAScoreList)
+scores = IPAScoreList[1]
+max_value = max(scores)
+highestIPA = scores.index(max_value)
 
-max_value = max(IPAScoreList)
-highestIPA = IPAScoreList.index(max_value)
+print("Our word is ", IPAScoreList[0][highestIPA])
 
 print("hihest value is ", max_value, "at index ", highestIPA)
   
