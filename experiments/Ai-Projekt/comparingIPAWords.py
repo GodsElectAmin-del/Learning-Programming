@@ -1,5 +1,6 @@
 #declaring an variable so i can use it in the loop for the word and also to have something to comapre
 
+
 compIPA = []
 
 # getting every charkter in an IPA Word
@@ -30,6 +31,16 @@ ipa_list = [
     "ɔpˈdrɑxtjə",
 ]
 
+#the IPASCoreList
+n = len(ipa_list)
+m,n = 2,n 
+IPAScoreList = []
+for i in range (m):
+ row = []
+ for j in range(n):
+   row.append(0)
+ IPAScoreList.append(row)
+print(IPAScoreList)
 
 
 
@@ -37,28 +48,26 @@ ipa_list = [
 #we need to store an score for each word
 
 # IPAword = "ɔpɣaːvə"
+u = 0
 for z in ipa_list:
+  z 
+  IPAScoreList[0][u] = z
+  u += 1
   for y in compIPA:
     if y in z:
      print("this word is in the IPA word " + y)
      score += 1
   print("the score of ",z, "is: ",score) 
   score = 0
-   
+
+print(IPAScoreList)
+  
 
 # TODO We need to filter out the word with the highest score
 # we need to assign each word in that array and number: is that an multi dimensional array
 
 # TODO Creating a multidimensional Zero Matrix
-n = len(ipa_list)
-m,n = 2,n 
-mat = []
-for i in range (m):
- row = []
- for j in range(n):
-   row.append(0)
- mat.append(row)
-print(mat)
+
 # IPAScoreList = []
 
 '''
