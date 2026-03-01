@@ -23,5 +23,11 @@
     public void setDone(boolean newDone){
         this.done = newDone;
     }
+    public Task(int id, String title, boolean done){
+        // ist das hinreichend oder muss hier noch was hin
+        this.id = id;
+        this.title = title;
+        this.done = done;
+    }
 
 }
