@@ -2,19 +2,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TaskService {
+    private int nextID = 1;
     private final List<Task> tasks = new ArrayList<>();
 
-    static void addTask(String Title){
-        task.add(Title);
+    public void addTask(String title){
+        Task t = new Task(nextID++, title);
+        tasks.add(t);
     }
 
-    static void listTasks(){
-        for (int i = 0; i < tasks.size; i++){
+    public void listTasks(){
+        for (int i = 0; i < tasks.size(); i++){
             System.out.println(tasks.get(i));
         }
     }
 
-    static void markDone(int id){
+    public void markDone(int id){
 
     }
 }
