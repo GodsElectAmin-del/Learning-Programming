@@ -51,18 +51,23 @@ print(IPAScoreList)
 u = 0
 for z in ipa_list:
   z 
-  IPAScoreList[0][u] = z
+  IPAScoreList[1][u] = z
  # u += 1
   for y in compIPA:
     if y in z:
      print("this word is in the IPA word " + y)
      score += 1
   print("the score of ",z, "is: ",score) 
-  IPAScoreList[1][u] = score
+  IPAScoreList[0][u] = score
   score = 0
   u += 1
 
 print(IPAScoreList)
+
+max_value = max(IPAScoreList)
+highestIPA = IPAScoreList.index(max_value)
+
+print("hihest value is ", max_value, "at index ", highestIPA)
   
 
 # TODO We need to filter out the word with the highest score
