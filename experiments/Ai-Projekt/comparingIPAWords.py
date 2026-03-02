@@ -9,9 +9,9 @@ for x in "ʊ̯fɡaːbə":
 
 
 
-# TODO THE IPAWord is not one but is an Array of Words and we need step by step compare each
+# TODO THE IPAWord is not one but is an Array of Words and we need step by step compare each // done
 # TODO We need to add a ranking after each itteration / done
-# TODO Each word need to get there own scpre
+# TODO Each word need to get there own scpre // done
 score = 0
 ipa_list = [
     "ˈɔpɣaːvə",
@@ -73,9 +73,9 @@ print("hihest value is ", max_value, "at index ", highestIPA)
   
 
 # TODO We need to filter out the word with the highest score
-# we need to assign each word in that array and number: is that an multi dimensional array
+# we need to assign each word in that array and number: is that an multi dimensional array // done
 
-# TODO Creating a multidimensional Zero Matrix
+# TODO Creating a multidimensional Zero Matrix // done
 
 # IPAScoreList = []
 
@@ -99,3 +99,4 @@ I dont understand
 
 # TODO have acces to an chatbot API the gnerates a Word and than have code inserting it inside the code
 
+# Video to using chatgpt inside of python: https://www.youtube.com/watch?v=q5HiD5PNuck
