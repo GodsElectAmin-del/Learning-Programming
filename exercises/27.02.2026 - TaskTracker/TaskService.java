@@ -16,6 +16,15 @@ public class TaskService {
         }
     }
 
+    public boolean markDone(int id){
+    for(Task t : tasks){
+        if (t.getId() == id){
+            t.markDone();
+            return true;
+        }
+    }
+    return false;
+    }
 
 }
 
