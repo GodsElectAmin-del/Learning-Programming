@@ -6,10 +6,15 @@ public class Main {
         
         Scanner myObj = new Scanner(System.in);
         System.out.println("Enter your command ");
+        String command = myObj.nextLine();
+        command.trim();
+
+        // TODO split the word right and 
+        //TODO if Befehele für den richtige nutzen des INputs
 
         // so we need to trim() ; dann we need to split it ; than we need to check what the left part is and if it is equal to an command
         // if it is equal to an command than we compile an response with the right Part of the output
-        
+
     }
 }
 
