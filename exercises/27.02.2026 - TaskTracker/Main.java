@@ -1,13 +1,32 @@
 import java.util.*;
-import java.util.regex.*;
 public class Main {
     public static void main(String[] args){
         // the logic to understanding commands
-        
+        TaskService service = new TaskService();
+        TaskService newTask = new TaskService();
+        TaskService newDone = new TaskService();
         Scanner myObj = new Scanner(System.in);
         System.out.println("Enter your command ");
         String command = myObj.nextLine();
         command.trim();
+        String[] actions = command.split("\\s+");
+        // i want to check the first word for the actions
+        if (actions[0] == "add"){
+
+        }
+
+        if (actions[0].equals("list")){
+            service.listTasks();
+        }
+
+        if (actions[0].equals("exit")){
+
+        }
+
+        if (actions[0].equals("done")){
+
+        }
+
 
         // TODO split the word right and 
         //TODO if Befehele für den richtige nutzen des INputs

@@ -70,6 +70,8 @@ highestIPA = scores.index(max_value)
 print("Our word is ", IPAScoreList[0][highestIPA])
 
 print("hihest value is ", max_value, "at index ", highestIPA)
+
+
   
 
 # TODO We need to filter out the word with the highest score
@@ -94,6 +96,9 @@ print(mat)
 I dont understand
 '''
 #TODO insert an GPT output of an promt generating IPA words in an array
+# it seems like we want gpt to give us JSON outputs because you can convert JSON string to python list
+
+#TODO have a JSON format in which we want gpt give us our to be used Info
 
 # TODO generate a usable GPT prompt
 
