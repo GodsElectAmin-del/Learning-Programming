@@ -1,4 +1,6 @@
 #declaring an variable so i can use it in the loop for the word and also to have something to comapre
+import html
+# data ist jetzt eine Python-Liste mit echten Unicode-Strings
 
 
 compIPA = []
@@ -34,7 +36,7 @@ ipa_list = [
 '''
 
 # the gpt list
-ipa_list = [{'Word': 'taak', 'IPA': 'taːk'}, {'Word': 'opdracht', 'IPA': 'ˈɔpdrɑxt'}, {'Word': 'klus', 'IPA': 'klʏs'}, {'Word': 'opgave', 'IPA': 'ˈɔpˌɣɑvə'}, {'Word': 'taken', 'IPA': 'ˈtɑkən'}, {'Word': 'project', 'IPA': 'ˈproːʝɛkt'}, {'Word': 'missie', 'IPA': 'mɪsˈsi'}, {'Word': 'bezigheid', 'IPA': 'bəˈzɪɣɦɛit'}, {'Word': 'onderneming', 'IPA': 'ˌɔndərˈneːmɪŋ'}, {'Word': 'verantwoordelijkheid', 'IPA': 'vərˌɑntwɔrdəˌlɛjkɦɛit'}, {'Word': 'opdrachtje', 'IPA': 'ˈɔpdrɑxtjə'}, {'Word': 'klusje', 'IPA': 'ˈklʏsjə'}, {'Word': 'puzzel', 'IPA': 'ˈpʏzəl'}, {'Word': 'job', 'IPA': 'dʒɔb'}, {'Word': 'verzoek', 'IPA': 'vərˈzuːxt'}, {'Word': 'projectje', 'IPA': 'ˈproːʝɛktjə'}, {'Word': 'taakje', 'IPA': 'ˈtaːk.jə'}, {'Word': 'uitdaging', 'IPA': 'œytˈdɑːxɪŋ'}, {'Word': 'verantwoordelijkheid', 'IPA': 'vərˌɑntwɔrdəˌlɛjkɦɛit'}, {'Word': 'plan', 'IPA': 'plɑn'}]
+ipa_list = list(html.unescape[{'Word': 'taak', 'IPA': 'taːk'}, {'Word': 'opdracht', 'IPA': 'ˈɔpdrɑxt'}, {'Word': 'klus', 'IPA': 'klʏs'}, {'Word': 'opgave', 'IPA': 'ˈɔpˌɣɑvə'}, {'Word': 'taken', 'IPA': 'ˈtɑkən'}, {'Word': 'project', 'IPA': 'ˈproːʝɛkt'}, {'Word': 'missie', 'IPA': 'mɪsˈsi'}, {'Word': 'bezigheid', 'IPA': 'bəˈzɪɣɦɛit'}, {'Word': 'onderneming', 'IPA': 'ˌɔndərˈneːmɪŋ'}, {'Word': 'verantwoordelijkheid', 'IPA': 'vərˌɑntwɔrdəˌlɛjkɦɛit'}, {'Word': 'opdrachtje', 'IPA': 'ˈɔpdrɑxtjə'}, {'Word': 'klusje', 'IPA': 'ˈklʏsjə'}, {'Word': 'puzzel', 'IPA': 'ˈpʏzəl'}, {'Word': 'job', 'IPA': 'dʒɔb'}, {'Word': 'verzoek', 'IPA': 'vərˈzuːxt'}, {'Word': 'projectje', 'IPA': 'ˈproːʝɛktjə'}, {'Word': 'taakje', 'IPA': 'ˈtaːk.jə'}, {'Word': 'uitdaging', 'IPA': 'œytˈdɑːxɪŋ'}, {'Word': 'verantwoordelijkheid', 'IPA': 'vərˌɑntwɔrdəˌlɛjkɦɛit'}, {'Word': 'plan', 'IPA': 'plɑn'}])
 
 # The logic works with thes list but the score is always 0
 
@@ -57,7 +59,7 @@ print(IPAScoreList)
 # IPAword = "ɔpɣaːvə"
 u = 0
 for z in ipa_list:
-  z 
+  #z 
   IPAScoreList[0][u] = z
  # u += 1
   for y in compIPA:
@@ -112,3 +114,6 @@ I dont understand
 # TODO have acces to an chatbot API the gnerates a Word and than have code inserting it inside the code
 
 # Video to using chatgpt inside of python: https://www.youtube.com/watch?v=q5HiD5PNuck
+
+#TODO u beed to unescape IPA because of some HTML stuff
+#TODO 
