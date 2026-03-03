@@ -13,6 +13,7 @@ for x in "ʊ̯fɡaːbə":
 # TODO We need to add a ranking after each itteration / done
 # TODO Each word need to get there own scpre // done
 score = 0
+'''
 ipa_list = [
     "ˈɔpɣaːvə",
     "taːk",
@@ -30,6 +31,12 @@ ipa_list = [
     "ʋɛrk",
     "ɔpˈdrɑxtjə",
 ]
+'''
+
+# the gpt list
+ipa_list = [{'Word': 'taak', 'IPA': 'taːk'}, {'Word': 'opdracht', 'IPA': 'ˈɔpdrɑxt'}, {'Word': 'klus', 'IPA': 'klʏs'}, {'Word': 'opgave', 'IPA': 'ˈɔpˌɣɑvə'}, {'Word': 'taken', 'IPA': 'ˈtɑkən'}, {'Word': 'project', 'IPA': 'ˈproːʝɛkt'}, {'Word': 'missie', 'IPA': 'mɪsˈsi'}, {'Word': 'bezigheid', 'IPA': 'bəˈzɪɣɦɛit'}, {'Word': 'onderneming', 'IPA': 'ˌɔndərˈneːmɪŋ'}, {'Word': 'verantwoordelijkheid', 'IPA': 'vərˌɑntwɔrdəˌlɛjkɦɛit'}, {'Word': 'opdrachtje', 'IPA': 'ˈɔpdrɑxtjə'}, {'Word': 'klusje', 'IPA': 'ˈklʏsjə'}, {'Word': 'puzzel', 'IPA': 'ˈpʏzəl'}, {'Word': 'job', 'IPA': 'dʒɔb'}, {'Word': 'verzoek', 'IPA': 'vərˈzuːxt'}, {'Word': 'projectje', 'IPA': 'ˈproːʝɛktjə'}, {'Word': 'taakje', 'IPA': 'ˈtaːk.jə'}, {'Word': 'uitdaging', 'IPA': 'œytˈdɑːxɪŋ'}, {'Word': 'verantwoordelijkheid', 'IPA': 'vərˌɑntwɔrdəˌlɛjkɦɛit'}, {'Word': 'plan', 'IPA': 'plɑn'}]
+
+# The logic works with thes list but the score is always 0
 
 #the IPASCoreList
 n = len(ipa_list)
