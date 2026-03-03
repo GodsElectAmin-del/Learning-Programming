@@ -30,6 +30,7 @@ public class Main {
         if (actions[0].equals("done")){
 
         }
+        
     }
 
 
@@ -45,3 +46,5 @@ public class Main {
 // TODO : User Input erlauben und diesen mit richtigen Commands verbinden
 // TODO : Sinvolle Outputs
 // TODO : Endlos Schleife die mit exit beendet wird
+//TODO after edding the infinite loop it only allows one input
+// TODO we need to allow the program to get a new action
