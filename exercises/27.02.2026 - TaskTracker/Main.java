@@ -11,8 +11,12 @@ public class Main {
         command.trim();
         String[] actions = command.split("\\s+");
         // i want to check the first word for the actions
-        if (actions[0] == "add"){
 
+        // TODO a loop that asked the user for a new promt after each entry
+        while (!actions[0].equals("exit"))
+        {
+        if (actions[0] == "add"){
+            newTask.addTask(command);
         }
 
         if (actions[0].equals("list")){
@@ -26,6 +30,7 @@ public class Main {
         if (actions[0].equals("done")){
 
         }
+    }
 
 
         // TODO split the word right and 
