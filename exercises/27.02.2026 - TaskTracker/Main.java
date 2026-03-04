@@ -3,8 +3,6 @@ public class Main {
     public static void main(String[] args){
         // the logic to understanding commands
         TaskService service = new TaskService();
-        TaskService newTask = new TaskService();
-        TaskService newDone = new TaskService();
         Scanner myObj = new Scanner(System.in);
         System.out.println("Enter your command ");
         String command = myObj.nextLine();
@@ -13,21 +11,30 @@ public class Main {
         // i want to check the first word for the actions
 
         // TODO a loop that asked the user for a new promt after each entry
-        while (!actions[0].equals("exit"))
+        while (true )
         {
-        if (actions[0] == "add"){
-            newTask.addTask(command);
+        System.out.println("Enter your command ");
+        String command2 = myObj.nextLine();
+        command2 = command2.trim();
+        String[] actions2 = command2.split("\\s+");
+        
+        if (actions2[0].equals("exit")){
+            break;
         }
 
-        if (actions[0].equals("list")){
+        if (actions2[0].equals("add")){
+            service.addTask(actions2[1]);
+        }
+
+        if (actions2[0].equals("list")){
             service.listTasks();
         }
 
-        if (actions[0].equals("exit")){
+        if (actions2[0].equals("exit")){
 
         }
 
-        if (actions[0].equals("done")){
+        if (actions2[0].equals("done")){
 
         }
         
@@ -48,3 +55,5 @@ public class Main {
 // TODO : Endlos Schleife die mit exit beendet wird
 //TODO after edding the infinite loop it only allows one input
 // TODO we need to allow the program to get a new action
+
+// TODO 1) understanding the toString stuff gpt recomends
