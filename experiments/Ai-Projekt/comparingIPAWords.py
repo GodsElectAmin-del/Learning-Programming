@@ -1,13 +1,13 @@
 #declaring an variable so i can use it in the loop for the word and also to have something to comapre
 import html
-# data ist jetzt eine Python-Liste mit echten Unicode-Strings
+import json
+
+compIPA = "ʊ̯fɡaːbə"
+ipa_list = [{'Word': 'taak', 'IPA': 'taːk'}, {'Word': 'opdracht', 'IPA': 'ˈɔpdrɑxt'}, {'Word': 'klus', 'IPA': 'klʏs'}, {'Word': 'opgave', 'IPA': 'ˈɔpˌɣɑvə'}, {'Word': 'taken', 'IPA': 'ˈtɑkən'}, {'Word': 'project', 'IPA': 'ˈproːʝɛkt'}, {'Word': 'missie', 'IPA': 'mɪsˈsi'}, {'Word': 'bezigheid', 'IPA': 'bəˈzɪɣɦɛit'}, {'Word': 'onderneming', 'IPA': 'ˌɔndərˈneːmɪŋ'}, {'Word': 'verantwoordelijkheid', 'IPA': 'vərˌɑntwɔrdəˌlɛjkɦɛit'}, {'Word': 'opdrachtje', 'IPA': 'ˈɔpdrɑxtjə'}, {'Word': 'klusje', 'IPA': 'ˈklʏsjə'}, {'Word': 'puzzel', 'IPA': 'ˈpʏzəl'}, {'Word': 'job', 'IPA': 'dʒɔb'}, {'Word': 'verzoek', 'IPA': 'vərˈzuːxt'}, {'Word': 'projectje', 'IPA': 'ˈproːʝɛktjə'}, {'Word': 'taakje', 'IPA': 'ˈtaːk.jə'}, {'Word': 'uitdaging', 'IPA': 'œytˈdɑːxɪŋ'}, {'Word': 'verantwoordelijkheid', 'IPA': 'vərˌɑntwɔrdəˌlɛjkɦɛit'}, {'Word': 'plan', 'IPA': 'plɑn'}]
 
 
-compIPA = []
 
-# getting every charkter in an IPA Word
-for x in "ʊ̯fɡaːbə":
-  compIPA.append(x) # storing my IPA letters seperatly
+sum(1 for y in compIPA if y in ipa_list)
 
 
 
@@ -36,7 +36,8 @@ ipa_list = [
 '''
 
 # the gpt list
-ipa_list = list(html.unescape[{'Word': 'taak', 'IPA': 'taːk'}, {'Word': 'opdracht', 'IPA': 'ˈɔpdrɑxt'}, {'Word': 'klus', 'IPA': 'klʏs'}, {'Word': 'opgave', 'IPA': 'ˈɔpˌɣɑvə'}, {'Word': 'taken', 'IPA': 'ˈtɑkən'}, {'Word': 'project', 'IPA': 'ˈproːʝɛkt'}, {'Word': 'missie', 'IPA': 'mɪsˈsi'}, {'Word': 'bezigheid', 'IPA': 'bəˈzɪɣɦɛit'}, {'Word': 'onderneming', 'IPA': 'ˌɔndərˈneːmɪŋ'}, {'Word': 'verantwoordelijkheid', 'IPA': 'vərˌɑntwɔrdəˌlɛjkɦɛit'}, {'Word': 'opdrachtje', 'IPA': 'ˈɔpdrɑxtjə'}, {'Word': 'klusje', 'IPA': 'ˈklʏsjə'}, {'Word': 'puzzel', 'IPA': 'ˈpʏzəl'}, {'Word': 'job', 'IPA': 'dʒɔb'}, {'Word': 'verzoek', 'IPA': 'vərˈzuːxt'}, {'Word': 'projectje', 'IPA': 'ˈproːʝɛktjə'}, {'Word': 'taakje', 'IPA': 'ˈtaːk.jə'}, {'Word': 'uitdaging', 'IPA': 'œytˈdɑːxɪŋ'}, {'Word': 'verantwoordelijkheid', 'IPA': 'vərˌɑntwɔrdəˌlɛjkɦɛit'}, {'Word': 'plan', 'IPA': 'plɑn'}])
+ipa_list = [{'Word': 'taak', 'IPA': 'taːk'}, {'Word': 'opdracht', 'IPA': 'ˈɔpdrɑxt'}, {'Word': 'klus', 'IPA': 'klʏs'}, {'Word': 'opgave', 'IPA': 'ˈɔpˌɣɑvə'}, {'Word': 'taken', 'IPA': 'ˈtɑkən'}, {'Word': 'project', 'IPA': 'ˈproːʝɛkt'}, {'Word': 'missie', 'IPA': 'mɪsˈsi'}, {'Word': 'bezigheid', 'IPA': 'bəˈzɪɣɦɛit'}, {'Word': 'onderneming', 'IPA': 'ˌɔndərˈneːmɪŋ'}, {'Word': 'verantwoordelijkheid', 'IPA': 'vərˌɑntwɔrdəˌlɛjkɦɛit'}, {'Word': 'opdrachtje', 'IPA': 'ˈɔpdrɑxtjə'}, {'Word': 'klusje', 'IPA': 'ˈklʏsjə'}, {'Word': 'puzzel', 'IPA': 'ˈpʏzəl'}, {'Word': 'job', 'IPA': 'dʒɔb'}, {'Word': 'verzoek', 'IPA': 'vərˈzuːxt'}, {'Word': 'projectje', 'IPA': 'ˈproːʝɛktjə'}, {'Word': 'taakje', 'IPA': 'ˈtaːk.jə'}, {'Word': 'uitdaging', 'IPA': 'œytˈdɑːxɪŋ'}, {'Word': 'verantwoordelijkheid', 'IPA': 'vərˌɑntwɔrdəˌlɛjkɦɛit'}, {'Word': 'plan', 'IPA': 'plɑn'}]
+
 
 # The logic works with thes list but the score is always 0
 
