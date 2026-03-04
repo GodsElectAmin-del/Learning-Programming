@@ -13,8 +13,12 @@ ipa_list = [{'Word': 'zonnebloem', 'IPA': 'ˈzɔ.nə.bloːm'}, {'Word': 'zonnege
 n = len(ipa_list)
 IPAScoreList = [[0] * n for _ in range(2)] # dont get this 
 
+# [0] * n makes a list that is has [0] n times, n long with only 0s
+# [] for _ in range(2) does this but for 2 times, two seperate arrays
+
 # compute scores
-for u, z in enumerate(ipa_list): # going troguh list and saving index
+for u, z in enumerate(ipa_list): # going troguh list and saving index // think this is actually wrong lol
+    # you can enumrate through an two dimensional array via using u, z
     word = z.get("Word", "") # you can nte Word and what is next to it, understood
     ipa = z.get("IPA", "")
   #  ipa = unicodedata.normalize("NFD", html.unescape(ipa_raw)) # this seems important
