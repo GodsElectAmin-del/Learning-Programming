@@ -53,3 +53,7 @@ public class Main {
 // TODO we need to allow the program to get a new action
 
 // TODO 1) understanding the toString stuff gpt recomends
+
+/**
+ * DONE 
+ */
