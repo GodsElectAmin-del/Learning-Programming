@@ -4,11 +4,7 @@ public class Main {
         // the logic to understanding commands
         TaskService service = new TaskService();
         Scanner myObj = new Scanner(System.in);
-        System.out.println("Enter your command ");
-        String command = myObj.nextLine();
-        command.trim();
-        String[] actions = command.split("\\s+");
-        // i want to check the first word for the actions
+
 
         // TODO a loop that asked the user for a new promt after each entry
         while (true )

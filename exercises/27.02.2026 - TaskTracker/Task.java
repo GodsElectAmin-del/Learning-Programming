@@ -34,7 +34,10 @@
         this.title = title;
         this.done = false;
     }
-
+    @Override
+    public String toString(){
+        return "#" + id + id + " [" + (done ? "x" : "")+ "] "+ title;
+    }
 
 
 }
