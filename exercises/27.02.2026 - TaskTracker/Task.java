@@ -36,7 +36,7 @@
     }
     @Override
     public String toString(){
-        return "#" + id + id + " [" + (done ? "x" : "")+ "] "+ title;
+        return "#" + id + " [" + (done ? "x" : "")+ "] "+ title;
     }
 
 
