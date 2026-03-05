@@ -18,7 +18,13 @@ word_list = [[0] *n for _ in range(2)]
 print(word_list)
 
 # TODO We now, need to sort the titles in the first line of the Array
+for t,z in enumerate(items):
+    title = t.get("title", "")
+    tags = t.get("tags", "")
+    print(title)
+    print(tags)
 
-title = t.get("title", "")
+    # TODO comparing title and tags
+    if word_list [0][t] 
 
 # TODO We need to iterate that trough the List and check which score is the highest
