@@ -31,7 +31,7 @@ public class Main {
         }
 
         if (actions2[0].equals("done")){
-
+            service.markDone(Integer.parseInt(actions2[1]));
         }
         
     }
