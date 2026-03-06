@@ -1,6 +1,9 @@
 import html
 import unicodedata
 
+def normalise_case(text):
+    return text.lower
+
 query = "resume python basics"
 
 items = [
@@ -25,11 +28,12 @@ for z,t in enumerate(items): # z gets enumarated an t gets the item
     title = t.get("title", "")
     tags = t.get("tags", "")
     print(title)
-    print(tags)
+    print(tags) # thats doesnt work at all with normalize 
 
     # TODO putting our stuff inside a 2D array
-    word_list [0][z] =title
+    word_list [0][z] = normalise_case(title) # the method doesnt seem to work 
     word_list [1][z] = tags
+    print (word_list)
     score = sum(1 for y in tags if y in title)
     print(score)
 
