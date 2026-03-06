@@ -1,12 +1,15 @@
-public class KD {
+
+public class KD2 {
     String player;
     double kills;
     double deaths;
+    double kd;
 
-    public KD(String player, int kills, int deaths){
+    public KD2(String player, int kills, int deaths){
         this.player = player;
         this.kills = kills;
         this.deaths = deaths;
-        double kd = kills / deaths;
+        this.kd = (double) kills / deaths;
     }
 }
+
