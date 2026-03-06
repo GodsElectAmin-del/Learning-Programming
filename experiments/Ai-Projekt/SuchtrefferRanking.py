@@ -1,3 +1,6 @@
+import html
+import unicodedata
+
 query = "resume python basics"
 
 items = [
@@ -18,13 +21,18 @@ word_list = [[0] *n for _ in range(2)]
 print(word_list)
 
 # TODO We now, need to sort the titles in the first line of the Array
-for t,z in enumerate(items):
+for z,t in enumerate(items): # z gets enumarated an t gets the item
     title = t.get("title", "")
     tags = t.get("tags", "")
     print(title)
     print(tags)
 
-    # TODO comparing title and tags
-    if word_list [0][t] 
+    # TODO putting our stuff inside a 2D array
+    word_list [0][z] =title
+    word_list [1][z] = tags
+    score = sum(1 for y in tags if y in title)
+    print(score)
+
+        
 
 # TODO We need to iterate that trough the List and check which score is the highest
