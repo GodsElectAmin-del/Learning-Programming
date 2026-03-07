@@ -1,12 +1,12 @@
 package Java_Konstruktors2.Konstruktor_Validation;
 
 public class Rectangle {
-    int width;
-    int height;
-    int area;
+    double width;
+    double height;
+    double area;
 
-    public Rectangle(int width, int height){
-            this.area = width * height;
+    public Rectangle(double width, double height){
+            this.area = Math.sqrt((width * height)*(width * height));
     }
 
 }
