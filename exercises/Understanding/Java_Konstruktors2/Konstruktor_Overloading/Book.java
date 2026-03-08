@@ -13,11 +13,18 @@ public class Book {
         this.information = "the title is " + title + " the Author is " + author + " the amount of pages are " + pages;
     }
 
+/* 
     public Book(String title, String author){
         this.title = title;
         this.author = author;
         this.pages = 0;
         this.information = "the title is " + title + " the Author is " + author + " the amount of pages are " + pages;
+    }
+*/
+    // Konstruktor Chaining
+    public Book(String title, String author){
+        this(title, author,0); 
+        this.information= "This ia Konstruktor Chaining Output the title is " + title + " the Author is " + author + " the amount of pages are " + pages;
     }
 }
 
