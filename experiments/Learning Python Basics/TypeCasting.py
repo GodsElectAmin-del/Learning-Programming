@@ -6,10 +6,10 @@ as integer, and as float.
 
 #TODO We need to make n input integers
 
-def inputInt (x):
-    return x
+def variables(n):
+    return str(n), int(n), float(n)
 
-x = inputInt(4)
-print (f"this i a String {str(x)}, this is a Integer {int(x)} this is a float {float(x)}")
+n = variables(4)
+print (f"this i a String {n[0]}, this is a Integer {n[1]} this is a float {n[2]}")
 
 # TODO not how the task is intendet
