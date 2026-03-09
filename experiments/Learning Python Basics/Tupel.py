@@ -2,8 +2,15 @@ def name_check(my_name):
     '''
     this a comment
     '''
-    tuple(my_name)
-    print("x" in my_name)
-    print("X" in my_name)
-    print("X" in my_name[1:])
+
+    name = tuple(my_name)
+    has_x = ("x" in name) or ("X" in name)
+    first_letter = name[1:]
+    return has_x, first_letter
+
+print(name_check("Mixer"))
+    
+
+
+
 

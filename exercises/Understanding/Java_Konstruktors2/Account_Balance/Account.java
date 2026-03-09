@@ -10,7 +10,7 @@ public class Account {
     public void setbalance(double balance){
         this.balance = balance;
     }
-    public void deposit(int balance){
+    public void deposit(double balance){
         this.balance = this.balance + balance;
     }
 
