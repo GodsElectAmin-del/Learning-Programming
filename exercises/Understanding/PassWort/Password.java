@@ -1,8 +1,8 @@
 package PassWort;
 
 public class Password {
-    String username;
-    String password;
+    private String username;
+    private String password;
 
     public Password(String username, String password){
         this.username = username;
@@ -18,5 +18,12 @@ public class Password {
         else{
             
         }
+    }
+    public String getUserName(){
+        return this.username;
+    }
+
+    public String  getPasswrod(){
+        return this.password;
     }
 }
