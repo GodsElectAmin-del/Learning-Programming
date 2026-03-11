@@ -9,3 +9,4 @@ def list_copy(my_list):
 print(list_copy([1,2,3,4,5]))
 print(list_copy([1]))
 print(list_copy([]))
+print(list_copy([1,2,3]))
