@@ -1,0 +1,6 @@
+def second_sum(input_list):
+    my_result = 0
+    for i in input_list:
+        my_result = my_result + input_list[i-1]
+    return my_result
+print(second_sum([1,2,3,4,5]))
