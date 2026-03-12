@@ -1,0 +1,14 @@
+def contains_negative(numbers):
+   for index in range(len(numbers)):
+    if numbers[index] < 0:
+         numbers[index] = True
+    elif numbers[index] > 0:
+        numbers[index] = False
+   return any(numbers)
+print(contains_negative([1,2,3,4,-5]))
+
+'''
+The mistake was that i was out of range with using just "i" withput using range(len())
+Also i didnt use "elif"
+
+'''
