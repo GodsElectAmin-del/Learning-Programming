@@ -25,7 +25,7 @@ print(word_list)
 
 # TODO We now, need to sort the titles in the first line of the Array
 for z,t in enumerate(items): # z gets enumarated an t gets the item
-    title = t.get("title", "")
+    title = t.get("title", "")              
     tags = t.get("tags", "")
     print(title)
     print(tags) # thats doesnt work at all with normalize 
