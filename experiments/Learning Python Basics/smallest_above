@@ -1,0 +1,9 @@
+def smallest_above(numbers, threshold):
+    newList = list(range(0,len(numbers)-threshold))
+    i = 0
+    while threshold < len(numbers):
+        newList[i] = numbers[threshold]
+        threshold = threshold + 1
+        i = i+1
+    return newList
+print(smallest_above([1,2,3,4,5,], 3))
