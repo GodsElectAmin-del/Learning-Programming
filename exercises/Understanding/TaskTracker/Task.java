@@ -1,23 +1,20 @@
 package TaskTracker;
 
 public class Task {
-    int id;
-    String title;
-    boolean done;
+   private int id;
+    private String title;
+    private boolean done;
 
-    public String toString(){
-        return "#" + id + " [" + ((done)? "x" : " ") +"] " + title;
-    }
 
-    public void IdMaker(int id){
+    public Task(int id, String title){
         this.id = id;
-    }
-
-    public void TitleMaker(String title){
         this.title = title;
     }
-
-    public void DoneMaker(boolean done){
+    public void markDone(boolean done){
         this.done = done;
+    }
+    @Override
+        public String toString(){
+        return "#" + id + " [" + ((done)? "x" : " ") +"] " + title;
     }
 }
