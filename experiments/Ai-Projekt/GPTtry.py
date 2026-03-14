@@ -6,7 +6,7 @@ compIPA = "zɔ.nənˌbʏ.mə"
 # compIPA = list(unicodedata.normalize("NFD", html.unescape(source_escaped)))
 
 # GPT output (HTML-escaped IPA strings)
-ipa_list = [{'Word': 'zonnebloem', 'IPA': 'ˈzɔ.nə.bloːm'}, {'Word': 'zonnegeel', 'IPA': 'ˈzɔ.nə.ɣeːl'}, {'Word': 'zonnebloem', 'IPA': 'ˈzɔ.nə.bloːm'}, {'Word': 'zonneplant', 'IPA': 'ˈzɔ.nə.ˌplɑnt'}, {'Word': 'zonnebloemknop', 'IPA': 'ˈzɔ.nə.bloːm.knɔp'}]
+ipa_list = [{'Word': 'zonnebloem', 'IPA': ''}, {'Word': 'zonnegeel', 'IPA': 'ˈzɔ.nə.ɣeːl'}, {'Word': 'zonnebloem', 'IPA': 'ˈzɔ.nə.bloːm'}, {'Word': 'zonneplant', 'IPA': 'ˈzɔ.nə.ˌplɑnt'}, {'Word': 'zonnebloemknop', 'IPA': 'ˈzɔ.nə.bloːm.knɔp'}]
 
 # [{'Word': 'taak', 'IPA': 'taːk'}, {'Word': 'opdracht', 'IPA': 'ˈɔpdrɑxt'}]
 # create 2xN matrix: row0 = words, row1 = scores (initialized 0)
