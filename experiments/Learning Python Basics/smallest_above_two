@@ -1,0 +1,4 @@
+def smallest_above(numbers, threshold):
+    for i in numbers:
+        if numbers[i] > threshold:
+            bigNumbers[y] = numbers[i]
