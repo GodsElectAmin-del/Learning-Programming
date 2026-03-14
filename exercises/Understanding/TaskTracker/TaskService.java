@@ -1,10 +1,11 @@
 package TaskTracker;
+import java.util.ArrayList
 
 public class TaskService {
     private List<Task> tasks = new ArrayList<>();
 
     public void addTask(String title){
-        this.title = title;
+        tasks.add(title);
     }
     public Task listTask(){
         return tasks;
