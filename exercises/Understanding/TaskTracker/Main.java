@@ -14,6 +14,8 @@ public class Main {
         System.out.println(newTask2);
         
         TaskService service = new TaskService();
+        service.addTask("Amazon Sci-Fi kucken ");
+        service.listTask();
         
     }
     
