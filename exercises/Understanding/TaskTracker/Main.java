@@ -1,5 +1,8 @@
 package TaskTracker;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Task newTask1 = new Task(1, "The War of Art");
@@ -9,6 +12,9 @@ public class Main {
         Task newTask2 = new Task(2, "Ein Gespür für Zahlen");
         newTask2.markDone(false);
         System.out.println(newTask2);
+        
+        TaskService service = new TaskService();
+        
     }
     
 }
