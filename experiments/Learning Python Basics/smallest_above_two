@@ -1,4 +1,13 @@
 def smallest_above(numbers, threshold):
-    for i in numbers:
-        if numbers[i] > threshold:
-            bigNumbers[y] = numbers[i]
+    bigNumbers = None
+    for i in range(len(numbers)):
+        if i > threshold and (bigNumbers is None or i < bigNumbers):
+            bigNumbers = i
+    if bigNumbers == None:
+        raise ValueError('There is no smalles_above')
+    return bigNumbers
+print(smallest_above([1,2,3,4,5,6,7],6))
+#TODO the task is to find the smallest number that is bigger than the treshhold in the list
+#TODO creating a list of the numbers that is bigger than the treshhold
+#TODO finding the smalles number in the new List
+# TODO can you solve the Problem without creating a new List
