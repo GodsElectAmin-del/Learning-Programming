@@ -10,11 +10,15 @@ public class Task {
         this.id = id;
         this.title = title;
     }
-    public void markDone(boolean done){
-        this.done = done;
+    public boolean markDone(){
+        return done;
+    }
+    public int getId(){
+        return this.id;
     }
     @Override
         public String toString(){
         return "#" + id + " [" + ((done)? "x" : " ") +"] " + title;
     }
+    
 }
