@@ -10,8 +10,8 @@ public class Task {
         this.id = id;
         this.title = title;
     }
-    public boolean markDone(){
-        return done;
+    public void markDone(){
+        this.done = true;
     }
     public int getId(){
         return this.id;

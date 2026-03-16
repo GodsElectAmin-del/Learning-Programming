@@ -19,11 +19,20 @@ public class TaskService {
         for (int i = 0; i < tasks.size();){
         Task t = tasks.get(i);
             if (t.getId() == id){
-                return t;
+                return true;
             }
             i++;
         }
         return null;
+    }
+    public Task markDoneTask(int id){
+        for(i = 0; i < tasks.size();){
+            Tasks t = tasks.get(i);
+            if(id == i){
+                t.markDone();
+            }
+            i++;
+        }
     }
     
 }

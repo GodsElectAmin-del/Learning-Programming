@@ -20,6 +20,7 @@ public class Main {
         service.findById(3);
         service.listTask();
         service.findById(1);
+        service.markDone(1);
 
     }
     
