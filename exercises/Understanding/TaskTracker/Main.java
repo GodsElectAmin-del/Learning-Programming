@@ -20,18 +20,22 @@ public class Main {
         System.out.println("Enter your Command");
         String command = myObj.nextLine();
         String trimeedCommand = command.trim();
-        String myCommand = trimeedCommand.indexOf(" ");
-        if (myCommand != -1);{
-            String theCOmmand = input.substring(0, myCommand);
-            String actualCommand = input.substring(myCommand + 1);
+        int myCommandIndex = trimeedCommand.indexOf(" ");
+        String theCommand = trimeedCommand.substring(0, myCommandIndex);
+        String actualCommand = trimeedCommand.substring(myCommandIndex + 1);
+        /* 
+        if (myCommandIndex != -1){
+            String theCommand = trimeedCommand.substring(0, myCommandIndex);
+            String actualCommand = trimeedCommand.substring(myCommandIndex + 1);
         }
-        if (theCommand == "add") {
+            */
+        if (theCommand.equals("add")) {
             service.addTask(actualCommand);
         }
-        if (theCommand == "list"){
+        if (theCommand.equals("list")){
             service.listTask();
         }
-        if (theCommand == "done"){
+        if (theCommand.equals("done")){
             try{
             int numActualCommand = Integer.parseInt(actualCommand);
             service.markDoneTask(numActualCommand);}
@@ -39,6 +43,7 @@ public class Main {
                 System.out.println("you are slow!");
             }
         }
+        service.listTask();
         // using indexOf and substring
 
 
