@@ -17,10 +17,16 @@ public class Main {
         */
         Scanner myObj = new Scanner(System.in);
         System.out.println("Enter your Command");
-        System yourCommand = myObj.nextLine();
-        yourCommand[] myCommand = input.split("\\s+");
-        String Command = myCommand[0];
-        System.out.println(Command);
+        String command = myObj.nextLine();
+        String trimeedCommand = command.trim();
+        String myCommand = trimeedCommand.indexOf(" ");
+        If (myCommand != -1);{
+            String theCOmmand = input.substring(0, myCommand);
+            String actualCommand = input.substring(myCommand + 1);
+        }
+        // using indexOf and substring
+
+
        // Service.addTask(myObj);
         TaskService service = new TaskService();
         service.addTask("Amazon Sci-Fi kucken ");
