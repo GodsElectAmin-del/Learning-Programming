@@ -18,17 +18,25 @@ public class Main {
         TaskService service = new TaskService();
         Scanner myObj = new Scanner(System.in);
         System.out.println("Enter your Command");
-        String command = myObj.nextLine();
-        String trimeedCommand = command.trim();
-        int myCommandIndex = trimeedCommand.indexOf(" ");
-        String theCommand = trimeedCommand.substring(0, myCommandIndex);
-        String actualCommand = trimeedCommand.substring(myCommandIndex + 1);
+        //String command = myObj.nextLine();
+       String command = null;
+       // String trimeedCommand = command.trim();
+       // int myCommandIndex = trimeedCommand.indexOf(" ");
+       // String theCommand = trimeedCommand.substring(0, myCommandIndex);
+       // String actualCommand = trimeedCommand.substring(myCommandIndex + 1);
         /* 
         if (myCommandIndex != -1){
             String theCommand = trimeedCommand.substring(0, myCommandIndex);
             String actualCommand = trimeedCommand.substring(myCommandIndex + 1);
         }
             */
+    while (command == null || command != "exit" ){
+        System.out.println("Enter your Command");
+        command = myObj.nextLine();
+        String trimeedCommand = command.trim();
+        int myCommandIndex = trimeedCommand.indexOf(" ");
+        String theCommand = trimeedCommand.substring(0, myCommandIndex);
+        String actualCommand = trimeedCommand.substring(myCommandIndex + 1);
         if (theCommand.equals("add")) {
             service.addTask(actualCommand);
         }
@@ -43,23 +51,10 @@ public class Main {
                 System.out.println("you are slow!");
             }
         }
-        service.listTask();
-        // using indexOf and substring
+        
 
-
-       // Service.addTask(myObj);
-       /* 
-        TaskService service = new TaskService();
-        service.addTask("Amazon Sci-Fi kucken ");
-        service.addTask("The Wolf of Wall Street");
-        service.findById(1);
-        service.listTask();
-        service.findById(1);
-        service.markDoneTask(1);
-        service.markDoneTask(2);
-        service.listTask();
-        */
     }
     
+}
 }
 //can be improved apprantly
