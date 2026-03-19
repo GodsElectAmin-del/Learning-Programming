@@ -6,17 +6,16 @@ def compare_lines():
     y_line1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     y_line2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     y_line3 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    for i in range(len(x_line)):
+    for idx, i in enumerate(x_line):
         y1 = i
         y2 = i * i
         y3 = exp(i)
-        y_line1[i] = y1
-        y_line2[i] = y2
-        y_line3[i] = y3
+        y_line1[idx] = y1
+        y_line2[idx] = y2
+        y_line3[idx] = y3
     plt.plot(x_line,y_line1)
     plt.plot(x_line,y_line2)
     plt.plot(x_line,y_line3)
-    plt.legend(["line linear"],["line Polynomial"])
 compare_lines()
 plt.legend(["line linear"],["line Polynomial"],["line Exponetial"])
 plt.show()
