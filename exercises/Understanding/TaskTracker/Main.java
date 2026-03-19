@@ -40,7 +40,7 @@ public class Main {
         if (theCommand.equals("add")) {
             service.addTask(actualCommand);
         }
-        if (theCommand.equals("list")){
+        if (trimeedCommand.equals("list")){
             service.listTask();
         }
         if (theCommand.equals("done")){
@@ -58,3 +58,4 @@ public class Main {
 }
 }
 //can be improved apprantly
+// TODO when the slitting think gets a "-1" meaning there is " " space has to be understood
