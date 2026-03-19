@@ -1,11 +1,22 @@
-#creating all numbers from [0,0.1 .. 2] because i am lazy
-i = 0
-x = 0
-theValue = 0
-my_list = [0 for _ in range(21)]
-for i in range(21):
-    my_list[i] = theValue
-    x = x + 0.1
-    theValue = round(x,2)
-print(my_list)
-    ##my_list = [for in _ range(20)]
+import matplotlib.pyplot as plt
+from math import exp
+
+def compare_lines():    
+    x_line = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0]
+    y_line1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    y_line2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    y_line3 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    for i in range(len(x_line)):
+        y1 = i
+        y2 = i * i
+        y3 = exp(i)
+        y_line1[i] = y1
+        y_line2[i] = y2
+        y_line3[i] = y3
+    plt.plot(x_line,y_line1)
+    plt.plot(x_line,y_line2)
+    plt.plot(x_line,y_line3)
+    plt.legend(["line linear"],["line Polynomial"])
+compare_lines()
+plt.legend(["line linear"],["line Polynomial"],["line Exponetial"])
+plt.show()
