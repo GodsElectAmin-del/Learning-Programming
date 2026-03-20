@@ -16,6 +16,6 @@ def compare_lines():
     plt.plot(x_line,y_line1)
     plt.plot(x_line,y_line2)
     plt.plot(x_line,y_line3)
+    plt.legend(["line linear", "line Polynomial", "line Exponetial"])
 compare_lines()
-plt.legend(["line linear"],["line Polynomial"],["line Exponetial"])
 plt.show()
