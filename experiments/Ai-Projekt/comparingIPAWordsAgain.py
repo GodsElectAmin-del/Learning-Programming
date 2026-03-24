@@ -23,7 +23,9 @@ def Ipa_score(ipa_list):
         source_escape_IPA = item.get("IPA", "")
         IPA = html.unescape(source_escape_IPA)
 
-        Score = sum( (1* len(compIPA) / len(Word)) for y in compIPA if y in IPA)
+       # Score = sum( (1* len(compIPA) / len(Word)) for y in compIPA if y in IPA)
+        sum_score = sum( (1) for y in compIPA if y in IPA)
+        Score = sum_score / len(compIPA)
         ipa_Scorelist[2][index] = Score
         ipa_Scorelist[0][index] = Word
         ipa_Scorelist[1][index] = IPA
