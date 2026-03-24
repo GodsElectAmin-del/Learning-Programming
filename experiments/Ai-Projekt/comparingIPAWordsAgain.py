@@ -2,11 +2,17 @@ import html
 import unicodedata
 
 # source IPA (HTML-escaped) for component extraction
-compIPA = "zɔ.nənˌbʏ.mə"
+source_escape_compIPA = "zɔ.nənˌbʏ.mə"
+compIPA = html.unescape(source_escape_compIPA)
 # compIPA = list(unicodedata.normalize("NFD", html.unescape(source_escaped)))
 
+## TODO Unsecaping the HTML Stuff
+source_escape_ipa_list = [{'Word': 'zonnebloem', 'IPA': 'ˈzɔ.nə.bloːm'}, {'Word': 'zonnegeel', 'IPA': 'ˈzɔ.nə.ɣeːl'}, {'Word': 'zonnebloem', 'IPA': 'ˈzɔ.nə.bloːm'}, {'Word': 'zonneplant', 'IPA': 'ˈzɔ.nə.ˌplɑnt'}, {'Word': 'zonnebloemknop', 'IPA': 'ˈzɔ.nə.bloːm.knɔp'}]
+ipa_list = html.unescape(source_escape_ipa_list)
+#ipa_list = html.escape(temp_ipa_list)
+
 # GPT output (HTML-escaped IPA strings)
-ipa_list = [{'Word': 'zonnebloem', 'IPA': 'ˈzɔ.nə.bloːm'}, {'Word': 'zonnegeel', 'IPA': 'ˈzɔ.nə.ɣeːl'}, {'Word': 'zonnebloem', 'IPA': 'ˈzɔ.nə.bloːm'}, {'Word': 'zonneplant', 'IPA': 'ˈzɔ.nə.ˌplɑnt'}, {'Word': 'zonnebloemknop', 'IPA': 'ˈzɔ.nə.bloːm.knɔp'}]
+#ipa_list = [{'Word': 'zonnebloem', 'IPA': 'ˈzɔ.nə.bloːm'}, {'Word': 'zonnegeel', 'IPA': 'ˈzɔ.nə.ɣeːl'}, {'Word': 'zonnebloem', 'IPA': 'ˈzɔ.nə.bloːm'}, {'Word': 'zonneplant', 'IPA': 'ˈzɔ.nə.ˌplɑnt'}, {'Word': 'zonnebloemknop', 'IPA': 'ˈzɔ.nə.bloːm.knɔp'}]
 ipa_test = {'Word': 'zonnebloem', 'IPA': 'ˈzɔ.nə.bloːm'}
 n = len(ipa_list)
 ipa_Scorelist = [[0] * n for _ in range(3)]
@@ -34,7 +40,7 @@ def Ipa_score(ipa_list):
             highest_score = ThisFinalScore
             thisIndex = i
     TheBestWord = ipa_Scorelist[0][thisIndex]
-    return n, Word, IPA, ipa_Scorelist, highest_score, thisIndex, TheBestWord
+    return Word, IPA, ipa_Scorelist, highest_score, thisIndex, TheBestWord
 
 print(Ipa_score(ipa_list))
 '''
